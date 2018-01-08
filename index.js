@@ -1,5 +1,10 @@
 const config = require('./config.json')
 
+if(Object.keys(config.repositories).length == 0) {
+	console.error('Please add at least one repository to the list in config.json')
+	process.exit(1)
+}
+
 /* Deps */
 const express = require('express')
 const bodyparser = require('body-parser')
