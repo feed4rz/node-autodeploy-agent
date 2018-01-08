@@ -1,0 +1,33 @@
+{
+  "name": "autodeploy-agent",
+  "version": "1.0.0",
+  "description": "Github autodeploy agent. Uses github.com webhooks to listen to repository updates and pulls them when needed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feed4rz/node-autodeploy-agent.git"
+  },
+  "keywords": [
+    "autodeploy",
+    "github",
+    "git",
+    "webhooks",
+    "webhook",
+    "pull"
+  ],
+  "author": "feed4rz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feed4rz/node-autodeploy-agent/issues"
+  },
+  "homepage": "https://github.com/feed4rz/node-autodeploy-agent#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "child_process": "^1.0.2",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security"
+  }
+}

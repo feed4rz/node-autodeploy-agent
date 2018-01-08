@@ -1,0 +1,11 @@
+{
+	"root_dir" : "/root",
+	"repositories" : [
+		{ 
+			"dir" : "example", 
+			"secret": "example_secret_for_github_webhook", 
+			"on_push" : "command_to_execute_on_commit" 
+		}
+	],
+	"port": 34017
+}
