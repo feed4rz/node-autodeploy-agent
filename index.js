@@ -18,7 +18,7 @@ const app = express()
 app.use(bodyparser.json())
 
 app.post('/webhook/push', (req, res) => {
-	/* Checking request params */
+  /* Checking request params */
   if(!req.body.repository) return res.json({ success: false, err: 'Invalid body' })
   if(!config.repositories[req.body.repository.full_name]) return res.json({ success: false, err: 'Invalid repository' })
   if(!req.headers['x-hub-signature']) return res.json({ success: false, err: 'No signature provided' })
