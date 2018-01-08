@@ -2,7 +2,7 @@
 	"root_dir" : "/root",
 	"repositories" : {
 		"feed4rz/node-autodeploy-agent" : { 
-			"dir" : "example", 
+			"dir" : "example_repo_dir_in_root_dir", 
 			"secret": "example_secret_for_github_webhook", 
 			"on_push" : "command_to_execute_on_commit" 
 		}
