@@ -13,6 +13,8 @@ app.use(bodyparser.json())
 
 app.post('/webhook', (req, res) => {
 	console.log(req.body)
+
+	res.json({ success: true })
 })
 
 app.listen(config.port)
